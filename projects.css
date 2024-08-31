@@ -1,0 +1,56 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+
+    --bs-body-font-family: 'Poppins', sans-serif;
+    --bs-body-font-size: 10px; /* Adjust as needed */
+    --bs-body-font-weight: 100; /* Adjust as needed */
+
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+
+    color:white;
+
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container.n{
+    background-color: rgba(255, 255, 255, 0.13); /* Set your navbar's background color with transparency */
+    backdrop-filter: blur(10px);
+    font-size:10px;
+    font-weight: 100;
+    border-radius: 4px;
+}
+
+.container.cards{
+    width: 800px;
+    margin-top: 20px;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+  }
+  
